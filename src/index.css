@@ -1,0 +1,205 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-fade-in: fade-in 0.2s ease-out;
+  --animate-zoom-in-95: zoom-in-95 0.2s ease-out;
+
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes zoom-in-95 {
+    0% { transform: scale(0.95); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.alto-contraste, 
+html.alto-contraste * {
+  background-color: #000 !important;
+  background-image: none !important;
+  color: #fff !important;
+  border-color: #fff !important;
+  box-shadow: none !important;
+}
+
+html.alto-contraste a,
+html.alto-contraste a *,
+html.alto-contraste button,
+html.alto-contraste button *,
+html.alto-contraste [role="button"],
+html.alto-contraste [role="button"] * {
+  color: #facc15 !important; 
+  border-color: #facc15 !important;
+}
+
+
+
+
+html.alto-contraste .hc-no-underline,
+html.alto-contraste .hc-no-underline * {
+  text-decoration: none !important;
+}
+
+html.alto-contraste .hc-white,
+html.alto-contraste .hc-white * {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+html.alto-contraste .hc-black,
+html.alto-contraste .hc-black * {
+  color: #000000 !important;
+}
+
+html.alto-contraste .hc-hero-text,
+html.alto-contraste .hc-hero-text *,
+html.alto-contraste button.hc-hero-text,
+html.alto-contraste button.hc-hero-text * {
+  background-color: transparent !important;
+  color: #000000 !important;
+}
+
+html.alto-contraste .hc-border {
+  outline: 2px solid #facc15 !important; outline-offset: -2px !important;
+  
+  border-color: #facc15 !important;
+}
+
+html.alto-contraste .hc-hide-border {
+  border-color: transparent !important;
+}
+
+html.alto-contraste .hc-hidden {
+  display: none !important;
+}
+
+html.alto-contraste .hc-bg-black {
+  background-color: #000 !important;
+}
+
+html.alto-contraste img.hc-invert {
+  filter: grayscale(100%) invert(1) brightness(1.5) !important;
+}
+
+html.alto-contraste img {
+  background-color: transparent !important;
+  filter: grayscale(100%) !important;
+}
+html.alto-contraste svg {
+  background-color: transparent !important;
+}
+
+
+html.alto-contraste *:focus-visible {
+  outline: 3px solid #facc15 !important;
+  outline-offset: 2px !important;
+}
+html.alto-contraste .hc-white svg path {
+  fill: #ffffff !important;
+}
+
+
+html.alto-contraste .hc-yellow,
+html.alto-contraste .hc-yellow * {
+  color: #facc15 !important;
+}
+html.alto-contraste .hc-yellow svg path {
+  stroke: currentColor !important;
+}
+html.alto-contraste .hc-yellow svg polygon {
+  fill: #000000 !important;
+}
+
+
+
+
+html.alto-contraste input,
+html.alto-contraste textarea,
+html.alto-contraste select {
+  background-color: transparent !important;
+  color: #fff !important;
+  border-color: #facc15 !important; outline: 2px solid #facc15 !important; outline-offset: -2px !important;
+}
+
+html.alto-contraste input:focus,
+html.alto-contraste textarea:focus,
+html.alto-contraste select:focus {
+  border-color: #facc15 !important;
+  outline: 2px solid #facc15 !important;
+  outline-offset: 2px;
+}
+
+
+html.alto-contraste input:-webkit-autofill,
+html.alto-contraste input:-webkit-autofill:hover, 
+html.alto-contraste input:-webkit-autofill:focus, 
+html.alto-contraste input:-webkit-autofill:active {
+  -webkit-text-fill-color: #fff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+  border-color: #facc15 !important;
+}
+
+html.alto-contraste input:-webkit-autofill:focus {
+  border-color: #facc15 !important;
+}
+
+
+html.alto-contraste .bg-transparent {
+  background-color: transparent !important;
+}
+
+html.alto-contraste .hc-logo-bg {
+  background-color: transparent !important;
+  border-radius: 0.5rem !important;
+}
+
+html.alto-contraste .hc-logo-bg img {
+  filter: grayscale(100%) invert(1) brightness(1.5) !important;
+}
+
+html.alto-contraste .hc-logo-sm-bg {
+  background-color: transparent !important;
+  border-radius: 0.25rem !important;
+}
+
+html.alto-contraste .hc-logo-sm-bg img {
+  filter: grayscale(100%) invert(1) brightness(1.5) !important;
+}
+
+html.alto-contraste .group:focus-within .hc-placeholder-yellow::placeholder,
+html.alto-contraste .hc-placeholder-yellow::placeholder {
+  color: #facc15 !important;
+  opacity: 1 !important;
+}
+
+
+html.alto-contraste #vlibras-access-wrapper,
+html.alto-contraste #vlibras-app-root,
+html.alto-contraste [vw] {
+  filter: none !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+html.alto-contraste #vlibras-access-wrapper *,
+html.alto-contraste #vlibras-app-root *,
+html.alto-contraste [vw] * {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: inherit !important;
+  box-shadow: none !important;
+}
+
+html.alto-contraste .hc-light-overlay {
+  display: block !important;
+  background-color: transparent !important;
+  background-image: linear-gradient(to right, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.75) 45%, rgba(255,255,255,0) 100%) !important;
+}
+

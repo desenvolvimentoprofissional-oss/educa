@@ -1,0 +1,5 @@
+# CRA-SP Educa
+
+O CRA-SP Educa é a plataforma educacional oficial do Conselho Regional de Administração de São Paulo (CRA-SP). Nosso objetivo é conectar estudantes a cursos e vagas de estágio.
+
+- [Acesse o portal oficial do CRA-SP Educa](https://crasp-educa.ai.studio/)

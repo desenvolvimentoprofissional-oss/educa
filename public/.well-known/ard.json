@@ -1,0 +1,20 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "CRA-SP Educa - Conselho Regional de Administração de São Paulo",
+    "identifier": "did:web:crasp-educa.ai.studio",
+    "documentationUrl": "https://crasp-educa.ai.studio/llms.txt"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:crasp-educa.ai.studio:portal:catalogo-publico",
+      "displayName": "Catálogo Público de Cursos e Vagas - CRA-SP Educa",
+      "type": "application/ld+json",
+      "url": "https://crasp-educa.ai.studio/llms.txt",
+      "representativeQueries": [
+        "Quais cursos gratuitos estão disponíveis no CRA-SP Educa?",
+        "Como acessar vagas de estágio e emprego do CRA-SP Educa?"
+      ]
+    }
+  ]
+}
