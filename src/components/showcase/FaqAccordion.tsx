@@ -35,6 +35,7 @@ function FaqItem({ index, question, answer, isOpen, onClick }: FaqItemProps) {
       
       <div 
         id={panelId}
+        aria-hidden={!isOpen}
         className={`transition-all duration-300 overflow-hidden ${
           isOpen ? 'max-h-[24rem] opacity-100 pb-6' : 'max-h-0 opacity-0'
         }`}

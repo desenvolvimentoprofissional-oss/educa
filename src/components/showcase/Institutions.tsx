@@ -43,7 +43,7 @@ function InstitutionLogo({ name, logoUrl, linkUrl }: { name: string; logoUrl?: s
   return (
     <div className="flex items-center justify-center group">
       {formattedUrl ? (
-        <a href={formattedUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center outline-none">
+        <a href={formattedUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center outline-none focus-visible:ring-2 focus-visible:ring-[#2563eb] focus-visible:ring-offset-2 rounded-lg">
           {logoContent}
         </a>
       ) : (

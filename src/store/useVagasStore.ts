@@ -20,7 +20,9 @@ export const useVagasStore = create<VagasStore>((set, get) => ({
       if (response.ok) {
         const data = await response.json();
         if (Array.isArray(data)) {
-          const vagasComId = data.map((v: any) => ({ ...v, id: v.codigoDaVaga || Math.random().toString(36).substr(2, 9) }));
+          const vagasComId = data
+            .map((v: any) => ({ ...v, id: v.id || v.codigoDaVaga }))
+            .filter((v: any) => Boolean(v.id));
           set({ vagas: vagasComId, loading: false });
         } else {
           set({ vagas: [], loading: false });

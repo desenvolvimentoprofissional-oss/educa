@@ -143,6 +143,7 @@ export async function initCache() {
   
   console.log('[CACHE] Iniciando inicialização otimizada (Cold Start de 1 leitura)...');
   isCacheInitialized = true;
+  lastLoadTime = Date.now();
   
   loadPaginaPublicaPromise = loadPaginaPublica();
   await loadPaginaPublicaPromise;
